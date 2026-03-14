@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<!--
+   ______                            __
+  / ____/___  ____ ___  ____  __  __/ /____  _____
+ / /   / __ \/ __ `__ \/ __ \/ / / / __/ _ \/ ___/
+/ /___/ /_/ / / / / / / /_/ / /_/ / /_/  __/ /
+\____/\____/_/ /_/ /_/ .___/\__,_/\__/\___/_/
+                    /_/
+        Created with Perplexity Computer
+        https://www.perplexity.ai/computer
+-->
+
+<!-- Perplexity Computer Attribution — SEO Meta Tags -->
+<meta name="generator" content="Perplexity Computer">
+<meta name="author" content="Perplexity Computer">
+<meta property="og:see_also" content="https://www.perplexity.ai/computer">
+<link rel="author" href="https://www.perplexity.ai/computer">
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Mohammad Niyaz Shaikh — Cybersecurity Professional specializing in penetration testing, web application security, and network defense. Based in Mumbai, India.">
+<meta property="og:title" content="Mohammad Niyaz Shaikh | Cybersecurity Portfolio">
+<meta property="og:description" content="Penetration tester and cybersecurity researcher. MITM attacks, DDoS simulation, web app vulnerability assessment.">
+<meta property="og:type" content="website">
+<title>Mohammad Niyaz Shaikh | Cybersecurity Portfolio</title>
+
+<!-- Fonts -->
+<link href="https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@400,500,700,800&f[]=satoshi@300,400,500,700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- NAV -->
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="#" class="logo" aria-label="Mohammad Niyaz Shaikh — Home">
+        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+          <rect x="2" y="2" width="28" height="28" rx="4" stroke="var(--color-primary)" stroke-width="2"/>
+          <path d="M8 12 L16 8 L24 12 L24 20 L16 24 L8 20 Z" stroke="var(--color-primary)" stroke-width="1.5" fill="none"/>
+          <circle cx="16" cy="16" r="3" fill="var(--color-primary)"/>
+          <path d="M16 8 L16 13 M16 19 L16 24 M8 12 L13 15 M19 17 L24 20 M8 20 L13 17 M19 15 L24 12" stroke="var(--color-primary)" stroke-width="1" opacity="0.6"/>
+        </svg>
+        <span class="logo-text">NiyazShaikh<span class="logo-accent">.sec</span></span>
+      </a>
+
+      <ul class="nav-links" role="list">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#certifications">Certs</a></li>
+        <li><a href="#contact" class="nav-cta">Contact</a></li>
+      </ul>
+
+      <div class="nav-controls">
+        <button data-theme-toggle aria-label="Switch to light mode" class="theme-toggle">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        </button>
+        <button class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+        </button>
+      </div>
+    </nav>
+
+    <!-- Mobile menu -->
+    <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+      <ul role="list">
+        <li><a href="#about" class="mobile-link">About</a></li>
+        <li><a href="#skills" class="mobile-link">Skills</a></li>
+        <li><a href="#projects" class="mobile-link">Projects</a></li>
+        <li><a href="#certifications" class="mobile-link">Certifications</a></li>
+        <li><a href="#contact" class="mobile-link">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="hero" id="home">
+      <div class="hero-grid container">
+        <div class="hero-content">
+          <div class="hero-label">
+            <span class="terminal-dot"></span>
+            <span class="mono">root@mumbai:~$</span>
+          </div>
+          <h1 class="hero-name">Mohammad<br><span class="hero-accent">Niyaz Shaikh</span></h1>
+          <p class="hero-title">
+            <span class="typewriter" id="typewriter"></span><span class="cursor">_</span>
+          </p>
+          <p class="hero-bio">
+            Aspiring cybersecurity professional focused on penetration testing, network defense, and web application security. Based in Mumbai — currently transitioning from BPO to full-time security.
+          </p>
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary">View Projects</a>
+            <a href="#contact" class="btn btn-ghost">Get In Touch</a>
+          </div>
+          <div class="hero-stats">
+            <div class="stat">
+              <span class="stat-num">4+</span>
+              <span class="stat-label">Projects</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat">
+              <span class="stat-num">CEH</span>
+              <span class="stat-label">In Progress</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat">
+              <span class="stat-num">Mumbai</span>
+              <span class="stat-label">Based</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="terminal-window">
+            <div class="terminal-header">
+              <div class="terminal-dots">
+                <span class="tdot red"></span>
+                <span class="tdot yellow"></span>
+                <span class="tdot green"></span>
+              </div>
+              <span class="terminal-title mono">niyaz@kali:~</span>
+            </div>
+            <div class="terminal-body mono">
+              <div class="t-line"><span class="t-prompt">$</span> <span class="t-cmd">whoami</span></div>
+              <div class="t-line t-out">niyaz_shaikh // cybersecurity</div>
+              <div class="t-line"><span class="t-prompt">$</span> <span class="t-cmd">cat skills.txt</span></div>
+              <div class="t-line t-out"><span class="t-green">✓</span> Penetration Testing</div>
+              <div class="t-line t-out"><span class="t-green">✓</span> Network Security</div>
+              <div class="t-line t-out"><span class="t-green">✓</span> Web App Security (OWASP)</div>
+              <div class="t-line t-out"><span class="t-green">✓</span> Ettercap / Wireshark</div>
+              <div class="t-line t-out"><span class="t-green">✓</span> Burp Suite</div>
+              <div class="t-line"><span class="t-prompt">$</span> <span class="t-cmd">nmap -sV target.host</span></div>
+              <div class="t-line t-out t-muted">Starting Nmap 7.94...</div>
+              <div class="t-line t-out"><span class="t-green">PORT</span>   STATE SERVICE VERSION</div>
+              <div class="t-line t-out">22/tcp  open  ssh     OpenSSH</div>
+              <div class="t-line t-out">80/tcp  open  http    Apache</div>
+              <div class="t-line t-out">443/tcp open  https   nginx</div>
+              <div class="t-line"><span class="t-prompt">$</span> <span class="t-blink">▌</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-scroll">
+        <span class="mono">scroll down</span>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="about section" id="about">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label mono">01 / about</span>
+          <h2>Who I Am</h2>
+        </div>
+        <div class="about-grid">
+          <div class="about-text">
+            <p>I'm a 22-year-old cybersecurity professional in transition — currently working night shifts at a BPO while dedicating every available hour to mastering penetration testing, vulnerability assessment, and ethical hacking.</p>
+            <p>I completed my degree from Mumbai University in 2024 and have since been building hands-on skills through real lab projects at NewtonAI Tech — simulating MITM attacks, DDoS scenarios, wireless audits, and web application vulnerabilities.</p>
+            <p>My goal is a full-time role in red teaming or VAPT. I'm methodical, self-taught under pressure, and not afraid of getting my hands dirty in the terminal.</p>
+            <div class="about-detail-grid">
+              <div class="about-detail">
+                <span class="detail-label mono">Location</span>
+                <span class="detail-val">Mumbai, India (Malad)</span>
+              </div>
+              <div class="about-detail">
+                <span class="detail-label mono">Education</span>
+                <span class="detail-val">B.com — Mumbai University, 2024</span>
+              </div>
+              <div class="about-detail">
+                <span class="detail-label mono">Internship</span>
+                <span class="detail-val">NewtonAI Tech (Cybersecurity)</span>
+              </div>
+              <div class="about-detail">
+                <span class="detail-label mono">Focus Area</span>
+                <span class="detail-val">Red Team / VAPT / Web App Security</span>
+              </div>
+            </div>
+          </div>
+          <div class="about-card">
+            <div class="profile-shield">
+              <svg width="120" height="140" viewBox="0 0 120 140" fill="none" aria-label="Security shield icon">
+                <path d="M60 4 L112 28 L112 72 C112 100 88 126 60 136 C32 126 8 100 8 72 L8 28 Z" stroke="var(--color-primary)" stroke-width="2" fill="none"/>
+                <path d="M60 14 L102 34 L102 72 C102 96 82 118 60 128 C38 118 18 96 18 72 L18 34 Z" fill="var(--color-primary)" opacity="0.08"/>
+                <circle cx="60" cy="70" r="22" stroke="var(--color-primary)" stroke-width="1.5" fill="none"/>
+                <path d="M50 70 L58 78 L72 62" stroke="var(--color-primary)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <circle cx="60" cy="70" r="30" stroke="var(--color-primary)" stroke-width="0.5" stroke-dasharray="4 4" opacity="0.4"/>
+              </svg>
+              <div class="shield-label">
+                <span class="mono t-green">CLEARANCE:</span>
+                <span class="mono">ETHICAL HACKER</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="skills section" id="skills">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label mono">02 / skills</span>
+          <h2>Technical Arsenal</h2>
+        </div>
+
+        <div class="skills-grid">
+
+          <div class="skill-category">
+            <div class="skill-cat-header">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--color-primary)" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+              <h3>Penetration Testing</h3>
+            </div>
+            <div class="skill-tags">
+              <span class="skill-tag active">MITM Attacks</span>
+              <span class="skill-tag active">ARP Poisoning</span>
+              <span class="skill-tag active">DDoS Simulation</span>
+              <span class="skill-tag active">Wireless Auditing</span>
+              <span class="skill-tag active">WPA/WPA2 Cracking</span>
+              <span class="skill-tag">Social Engineering</span>
+            </div>
+          </div>
+
+          <div class="skill-category">
+            <div class="skill-cat-header">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--color-primary)" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+              <h3>Web App Security</h3>
+            </div>
+            <div class="skill-tags">
+              <span class="skill-tag active">XSS Detection</span>
+              <span class="skill-tag active">SQL Injection</span>
+              <span class="skill-tag active">Broken Auth Testing</span>
+              <span class="skill-tag active">OWASP Top 10</span>
+              <span class="skill-tag active">Session Hijacking</span>
+              <span class="skill-tag active">Burp Suite</span>
+            </div>
+          </div>
+
+          <div class="skill-category">
+            <div class="skill-cat-header">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--color-primary)" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+              <h3>Tools & Platforms</h3>
+            </div>
+            <div class="skill-tags">
+              <span class="skill-tag active">Kali Linux</span>
+              <span class="skill-tag active">Wireshark</span>
+              <span class="skill-tag active">Ettercap</span>
+              <span class="skill-tag active">Nmap</span>
+              <span class="skill-tag active">OWASP ZAP</span>
+              <span class="skill-tag active">hping3 / LOIC</span>
+              <span class="skill-tag active">aircrack-ng</span>
+              <span class="skill-tag">Metasploit</span>
+            </div>
+          </div>
+
+          <div class="skill-category">
+            <div class="skill-cat-header">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--color-primary)" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+              <h3>Dev & Lab</h3>
+            </div>
+            <div class="skill-tags">
+              <span class="skill-tag active">VMware / VirtualBox</span>
+              <span class="skill-tag active">Linux CLI</span>
+              <span class="skill-tag active">Python (Basic)</span>
+              <span class="skill-tag active">Bash Scripting</span>
+              <span class="skill-tag active">TryHackMe</span>
+              <span class="skill-tag active">DVWA / WebGoat</span>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Skill bars for core competencies -->
+        <div class="skill-bars">
+          <h3 class="skill-bars-title">Proficiency</h3>
+          <div class="skill-bar-item">
+            <div class="skill-bar-meta">
+              <span>Network Security</span>
+              <span class="mono">82%</span>
+            </div>
+            <div class="skill-bar-track"><div class="skill-bar-fill" data-width="82"></div></div>
+          </div>
+          <div class="skill-bar-item">
+            <div class="skill-bar-meta">
+              <span>Web App Security (OWASP)</span>
+              <span class="mono">76%</span>
+            </div>
+            <div class="skill-bar-track"><div class="skill-bar-fill" data-width="76"></div></div>
+          </div>
+          <div class="skill-bar-item">
+            <div class="skill-bar-meta">
+              <span>Penetration Testing</span>
+              <span class="mono">68%</span>
+            </div>
+            <div class="skill-bar-track"><div class="skill-bar-fill" data-width="68"></div></div>
+          </div>
+          <div class="skill-bar-item">
+            <div class="skill-bar-meta">
+              <span>Linux & CLI Tools</span>
+              <span class="mono">75%</span>
+            </div>
+            <div class="skill-bar-track"><div class="skill-bar-fill" data-width="75"></div></div>
+          </div>
+          <div class="skill-bar-item">
+            <div class="skill-bar-meta">
+              <span>Security Report Writing</span>
+              <span class="mono">70%</span>
+            </div>
+            <div class="skill-bar-track"><div class="skill-bar-fill" data-width="70"></div></div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="projects section" id="projects">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label mono">03 / projects</span>
+          <h2>Lab Projects</h2>
+          <p class="section-desc">Hands-on security research and simulations conducted at NewtonAI Tech and in personal lab environments.</p>
+        </div>
+
+        <div class="projects-grid">
+
+          <!-- Project 1 -->
+          <article class="project-card featured">
+            <div class="project-badge">Featured</div>
+            <div class="project-header">
+              <div class="project-icon">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+              </div>
+              <div class="project-meta">
+                <span class="project-type mono">MITM / Network</span>
+                <span class="project-org">NewtonAI Tech</span>
+              </div>
+            </div>
+            <h3>MITM Attack Demonstration</h3>
+            <p>Built a virtual lab to simulate Man-in-the-Middle attacks using ARP poisoning. Intercepted HTTP traffic between victim and attacker VMs, captured plaintext credentials, and demonstrated defenses using HTTPS, DNSSEC, and VPNs.</p>
+            <div class="project-tools">
+              <span class="tool-tag">Ettercap</span>
+              <span class="tool-tag">Wireshark</span>
+              <span class="tool-tag">VMware</span>
+              <span class="tool-tag">ARP Spoofing</span>
+            </div>
+            <div class="project-outcomes">
+              <div class="outcome"><span class="t-green">→</span> Captured plaintext login credentials via ARP poisoning</div>
+              <div class="outcome"><span class="t-green">→</span> Demonstrated HTTPS mitigation with before/after packet analysis</div>
+              <div class="outcome"><span class="t-green">→</span> Submitted full technical report with diagrams</div>
+            </div>
+          </article>
+
+          <!-- Project 2 -->
+          <article class="project-card">
+            <div class="project-header">
+              <div class="project-icon">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+              </div>
+              <div class="project-meta">
+                <span class="project-type mono">DDoS / Defense</span>
+                <span class="project-org">NewtonAI Tech</span>
+              </div>
+            </div>
+            <h3>Simulated DDoS Attack Lab</h3>
+            <p>Designed a controlled 3-VM lab to simulate Distributed Denial-of-Service attacks. Used LOIC and hping3 to perform SYN/HTTP floods, monitored CPU and network impact, then applied iptables rate-limiting as mitigation.</p>
+            <div class="project-tools">
+              <span class="tool-tag">LOIC</span>
+              <span class="tool-tag">hping3</span>
+              <span class="tool-tag">iptables</span>
+              <span class="tool-tag">Wireshark</span>
+              <span class="tool-tag">htop</span>
+            </div>
+            <div class="project-outcomes">
+              <div class="outcome"><span class="t-green">→</span> Measured before/during/after attack metrics on CPU & network</div>
+              <div class="outcome"><span class="t-green">→</span> Applied rate-limiting rules and verified mitigation effectiveness</div>
+            </div>
+          </article>
+
+          <!-- Project 3 -->
+          <article class="project-card">
+            <div class="project-header">
+              <div class="project-icon">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+              </div>
+              <div class="project-meta">
+                <span class="project-type mono">Web App / OWASP</span>
+                <span class="project-org">NewtonAI Tech</span>
+              </div>
+            </div>
+            <h3>Broken Authentication Testing</h3>
+            <p>Tested login vulnerabilities on DVWA and bWAPP. Performed SQL injection on login forms, session fixation, and session hijacking via cookies. Documented each finding with impact analysis and OWASP-aligned remediation steps.</p>
+            <div class="project-tools">
+              <span class="tool-tag">DVWA</span>
+              <span class="tool-tag">bWAPP</span>
+              <span class="tool-tag">Burp Suite</span>
+              <span class="tool-tag">SQL Injection</span>
+            </div>
+            <div class="project-outcomes">
+              <div class="outcome"><span class="t-green">→</span> Identified session fixation and cookie hijacking vulnerabilities</div>
+              <div class="outcome"><span class="t-green">→</span> Produced report aligned with OWASP Top 10 standards</div>
+            </div>
+          </article>
+
+          <!-- Project 4 -->
+          <article class="project-card">
+            <div class="project-header">
+              <div class="project-icon">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M1 6l10.4 7.2a1 1 0 0 0 1.2 0L23 6"/><rect x="1" y="4" width="22" height="16" rx="2"/></svg>
+              </div>
+              <div class="project-meta">
+                <span class="project-type mono">Wireless / Audit</span>
+                <span class="project-org">Personal Lab</span>
+              </div>
+            </div>
+            <h3>Wireless Security Audit — WPA/WPA2</h3>
+            <p>Conducted a wireless security audit in a controlled lab environment. Captured WPA/WPA2 handshakes using airmon-ng and airodump-ng, then performed dictionary-based password cracking with aircrack-ng to demonstrate weak-password risks.</p>
+            <div class="project-tools">
+              <span class="tool-tag">airmon-ng</span>
+              <span class="tool-tag">airodump-ng</span>
+              <span class="tool-tag">aircrack-ng</span>
+              <span class="tool-tag">Kali Linux</span>
+            </div>
+            <div class="project-outcomes">
+              <div class="outcome"><span class="t-green">→</span> Successfully captured WPA handshake and cracked weak password</div>
+              <div class="outcome"><span class="t-green">→</span> Documented legal/ethical boundaries and best practices</div>
+            </div>
+          </article>
+
+          <!-- Project 5 -->
+          <article class="project-card">
+            <div class="project-header">
+              <div class="project-icon">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
+              </div>
+              <div class="project-meta">
+                <span class="project-type mono">Web Recon / XSS</span>
+                <span class="project-org">NewtonAI Tech</span>
+              </div>
+            </div>
+            <h3>Web App Recon & XSS Research</h3>
+            <p>Deployed OWASP Juice Shop and used OWASP ZAP to perform automated reconnaissance — spider scan, passive analysis, and active vulnerability detection. Focused on XSS, SQL injection, and insecure endpoint identification.</p>
+            <div class="project-tools">
+              <span class="tool-tag">OWASP ZAP</span>
+              <span class="tool-tag">Juice Shop</span>
+              <span class="tool-tag">XSS</span>
+              <span class="tool-tag">SQLi</span>
+            </div>
+            <div class="project-outcomes">
+              <div class="outcome"><span class="t-green">→</span> Identified XSS, SQLi, and insecure direct object reference</div>
+              <div class="outcome"><span class="t-green">→</span> Produced vulnerability report with remediation recommendations</div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CERTIFICATIONS -->
+    <section class="certifications section" id="certifications">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label mono">04 / certifications</span>
+          <h2>Certifications &amp; Learning</h2>
+        </div>
+
+        <div class="certs-grid">
+
+          <div class="cert-card cert-inprogress">
+            <div class="cert-status-badge in-progress">In Progress</div>
+            <div class="cert-icon">
+              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="var(--color-primary)" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </div>
+            <h3>CEH — Certified Ethical Hacker</h3>
+            <p class="cert-body">EC-Council</p>
+            <div class="cert-progress">
+              <div class="cert-progress-bar"><div class="cert-progress-fill" style="width: 45%"></div></div>
+              <span class="mono cert-pct">~45% complete</span>
+            </div>
+            <p class="cert-desc">Industry-standard certification covering 20 hacking domains — footprinting, scanning, exploitation, social engineering, and more.</p>
+          </div>
+
+          <div class="cert-card cert-inprogress">
+            <div class="cert-status-badge in-progress">In Progress</div>
+            <div class="cert-icon">
+              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="var(--color-primary)" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
+            </div>
+            <h3>Jr. Penetration Tester Path</h3>
+            <p class="cert-body">TryHackMe</p>
+            <div class="cert-progress">
+              <div class="cert-progress-bar"><div class="cert-progress-fill" style="width: 30%"></div></div>
+              <span class="mono cert-pct">~30% complete</span>
+            </div>
+            <p class="cert-desc">Hands-on practical path covering web hacking, network services, privilege escalation, and exploit development through real lab environments.</p>
+          </div>
+
+          <div class="cert-card cert-done">
+            <div class="cert-status-badge completed">Completed</div>
+            <div class="cert-icon">
+              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="var(--color-primary)" stroke-width="1.5"><polyline points="9 11 12 14 22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+            </div>
+            <h3>Cybersecurity Projects (BIA)</h3>
+            <p class="cert-body">Boston Institute of Analytics</p>
+            <p class="cert-desc">Completed 5+ project-based modules: MITM attack demo, DDoS lab setup, broken auth testing, wireless audit, and XSS vulnerability research — all documented with technical reports.</p>
+          </div>
+
+          <div class="cert-card cert-done">
+            <div class="cert-status-badge completed">Completed</div>
+            <div class="cert-icon">
+              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="var(--color-primary)" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M7 7h10M7 12h10M7 17h6"/></svg>
+            </div>
+            <h3>B.com Graduate</h3>
+            <p class="cert-body">Mumbai University · 2024</p>
+            <p class="cert-desc">Completed undergraduate studies and pivoting fully into cybersecurity. Supplementing with hands-on certifications and lab projects.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact section" id="contact">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label mono">05 / contact</span>
+          <h2>Get In Touch</h2>
+          <p class="section-desc">Open to internship opportunities, VAPT roles, SOC analyst positions, and freelance security assessments.</p>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-info">
+            <div class="contact-item">
+              <div class="contact-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              </div>
+              <div>
+                <span class="contact-label mono">Email</span>
+                <a href="mailto:shaikhhussain9876@gmail.com" class="contact-value">shaikhhussain9876@gmail.com</a>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+              </div>
+              <div>
+                <span class="contact-label mono">LinkedIn</span>
+                <a href="https://in.linkedin.com/in/mohammad-niyaz-shaikh-b980b7319" target="_blank" rel="noopener noreferrer" class="contact-value">Mohammad Niyaz Shaikh</a>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              </div>
+              <div>
+                <span class="contact-label mono">Location</span>
+                <span class="contact-value">Mumbai, India (Malad)</span>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              </div>
+              <div>
+                <span class="contact-label mono">Availability</span>
+                <span class="contact-value t-green">Open to opportunities</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-cta">
+            <div class="cta-card">
+              <h3>Looking for a security intern or junior pentester?</h3>
+              <p>I'm actively seeking roles in VAPT, SOC analysis, and web application security. Let's build safer systems together.</p>
+              <a href="mailto:shaikhhussain9876@gmail.com" class="btn btn-primary btn-large">Send Me a Message</a>
+              <a href="https://www.linkedin.com/in/niyaz-shaikh-620040319/" target="_blank" rel="noopener noreferrer" class="btn btn-outline">View LinkedIn Profile</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-left">
+        <span class="mono footer-copy">© 2026 Mohammad Niyaz Shaikh</span>
+        <span class="footer-sep">·</span>
+        <span class="mono footer-copy">Mumbai, India</span>
+      </div>
+      <div class="footer-right">
+        <a href="https://www.perplexity.ai/computer" target="_blank" rel="noopener noreferrer" class="footer-attr">Created with Perplexity Computer</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
